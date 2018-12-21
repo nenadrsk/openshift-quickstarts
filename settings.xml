@@ -40,6 +40,20 @@
       <nonProxyHosts>local.net|some.host.com</nonProxyHosts>
     </proxy>
     -->
+    <proxy>
+            <id>proxy-http</id>
+            <active>true</active>
+            <protocol>http</protocol>
+            <host>egress-http-proxy</host>
+            <port>8080</port>
+        </proxy>
+        <proxy>
+            <id>proxy-https</id>
+            <active>true</active>
+            <protocol>https</protocol>
+            <host>egress-http-proxy</host>
+            <port>8080</port>
+        </proxy>
   </proxies>
   
   <profiles>
